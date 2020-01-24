@@ -17,3 +17,5 @@ Repeating: No
 Completed CS course: CS46A, CS46B, Math42, Math30
 
 First time using git, unsure if this is the correct way to make a directory.
+
+I can't think of any special topics off of the top of my head. I will let you know in the future however if I can think of any.
