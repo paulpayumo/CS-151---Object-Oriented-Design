@@ -1,20 +1,20 @@
-class Student
+public class Student
 {
-  private static String firstName;
-  private static String lastName;
-  private static int age;
-  private static float gpa;
-  private static String major;
-  private static String department;
+  private String firstName;
+  private String lastName;
+  private int age;
+  private double gpa;
+  private String major;
+  private String department;
   
   public static void sop(Object msg)
   {
     System.out.println(msg);
   }
   
-  public static Student(String first, String last, int age, float gpa, String major, String dpt)
+  public Student(String first, String last, int age, double gpa, String major, String dpt)
   {
-    fistName = first;
+    firstName = first;
     lastName = last;
     age = this.age;
     gpa = this.gpa;
@@ -22,72 +22,78 @@ class Student
     department = dpt;
   }
   
-  public static void setFirst(String newFirst)
+  public void setFirst(String newFirst)
   {
     firstName = newFirst;
   }
   
-  public static void setLast(String newLast)
+  public void setLast(String newLast)
   {
     lastName = newLast;
   }
   
-  public static void setAge(int age)
+  public void setAge(int age)
   {
     age = this.age;
   }
   
-  public static void setGPA(float gpa)
+  public void setGPA(double gpa)
   {
     gpa = this.gpa;
   }
   
-  public static void setMajor(String newMajor)
+  public void setMajor(String newMajor)
   {
     major = newMajor;
   }
   
-  public static void setDepartment(String newDpt)
+  public void setDepartment(String newDpt)
   {
     department = newDpt;
   }
   
-  public static String getFirst()
+  public String getFirst()
   {
     return firstName;
   }
   
-  public static String getLast()
+  public String getLast()
   {
     return lastName;
   }
   
-  public static int getAge()
+  public int getAge()
   {
     return age;
   }
   
-  public static float getGPA()
+  public double getGPA()
   {
     return gpa;
   }
   
-  public static String getMajor()
+  public String getMajor()
   {
-    return Major;
+    return major;
   }
   
-  public static String getDpt()
+  public String getDpt()
   {
     return department;
   }
   
   class Course
   {
-    public static void printSchedule()
+    public void printSchedule()
     {
-      sop("MoWe: 8:30AM - 9:45AM, 10:00AM - 11:45 AM);
-      sop("TuTh: 1:30PM - 2:45PM, 3:00PM - 5:45 PM);
+      sop("MoWe: 8:30AM - 9:45AM, 10:00AM - 11:45 AM");
+      sop("TuTh: 1:30PM - 2:45PM, 3:00PM - 5:45 PM");
     }
+  }
+  
+  public void printSchedule()
+  {
+	  Course schedulePrinter = new Course();
+	  schedulePrinter.printSchedule();
   }
 }
