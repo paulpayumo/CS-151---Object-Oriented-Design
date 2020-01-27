@@ -1,0 +1,5 @@
+The main difference between int and integer is that int is simply a 32bit representation of a value, whereas integer is a class
+which wraps an int into an object. Thus, int requires less memory, and is useful for storing numbers. While integer is larger in memory, 
+but can be used to change int into other formats such as string, or hexadecimal representations. Int is more useful in instances which 
+doesn't require too much flexibility on its value, or too much memory. Whereas the class integer is usefull for getting int as a string 
+representation, or even changing its values using functions inside the class.
