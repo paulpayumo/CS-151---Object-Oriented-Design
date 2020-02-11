@@ -1,3 +1,5 @@
+package Ex1;
+
 public class Student
 {
   private String firstName;
@@ -16,9 +18,9 @@ public class Student
   {
     firstName = first;
     lastName = last;
-    age = this.age;
-    gpa = this.gpa;
-    major = this.major;
+    this.age = age;
+    this.gpa = gpa;
+    this.major = major;
     department = dpt;
   }
   
@@ -34,12 +36,12 @@ public class Student
   
   public void setAge(int age)
   {
-    age = this.age;
+    this.age = age;
   }
   
   public void setGPA(double gpa)
   {
-    gpa = this.gpa;
+    this.gpa = gpa;
   }
   
   public void setMajor(String newMajor)
@@ -81,7 +83,10 @@ public class Student
   {
     return department;
   }
-  
+  public void getInfo()
+  {
+	  System.out.printf("%s %s, %d year old, %f gpa, %s major, %s department.%n", this.getFirst(), this.getLast(), this.getAge(), this.getGPA(), this.getMajor(), this.getDpt());
+  }
   class Course
   {
     public void printSchedule()
