@@ -1,5 +1,3 @@
-package Ex1;
-
 public class Student
 {
   private String firstName;
