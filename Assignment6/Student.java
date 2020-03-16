@@ -156,7 +156,7 @@ public class Student {
 		else System.out.println("Please input any of the following:%n Name %n Description %n Time %n Day");
 	}
 	
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		Student john = new Student();
 		Course course1 = new Course();
@@ -195,5 +195,5 @@ public class Student {
 		{
 			System.out.println(first.getDescription());
 		}
-	}
+	}*/
 }
